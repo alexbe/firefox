@@ -30,6 +30,10 @@
 #include <cmath>
 #include <cstring>
 
+#if defined(__i386__)
+#include <cstdint>
+#endif
+
 namespace WebCore {
 
 // Deal with denormals. They can very seriously impact performance on x86.
